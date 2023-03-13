@@ -5,9 +5,10 @@ import javax.swing.JColorChooser;
  * Flower support class
  * Creates a flower of a size and colour
  * It can grow
+ * It can tell the driver class where it is on the screen
  *
  * @Raina
- * @13/3/23
+ * @14/3/23
  */
 public class Flower
 {
@@ -40,6 +41,34 @@ public class Flower
         setTop();
         setLeft();
         setBottom();
+    }
+    
+    /**
+     * Getter left
+     */
+    public double getLeft(){
+        return this.left;
+    }
+    
+    /**
+     * Getter right
+     */
+    public double getRight(){
+        return this.left + this.flowerSize;
+    }
+    
+    /**
+     * Getter top
+     */
+    public double getTop(){
+        return this.top;
+    }
+    
+    /**
+     * Getter bottom
+     */
+    public double getBottom(){
+        return this.bottom;
     }
 
     /**
